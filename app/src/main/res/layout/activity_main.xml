@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Dashboard"
+        android:textSize="28sp"
+        android:fontFamily="@font/mo_me"
+        android:textColor="@color/black"
+        android:layout_margin="12dp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="45dp"
+        android:text="Campus Mobile App"
+        android:textColor="#A5A5A5"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardAttendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attendance"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take Attendance"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mo_li"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_library"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking System"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mo_li"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="0"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_order_food"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Food"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mo_li"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardEwallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ewallet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-Wallet"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mo_li"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardCampus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="2"
+            android:layout_column="0"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_map"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Campus Map"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mo_li"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="2"
+            android:layout_column="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_feedback"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mo_li"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </GridLayout>
+
+
+
+</RelativeLayout>
