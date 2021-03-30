@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -18,9 +19,9 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class Attendance extends AppCompatActivity {
 
-    TextInputEditText textInputEditTextStudentID, textInputEditTextCourseID, textInputEditTextDate;
-    Spinner SpinnerIntake;
+    TextInputEditText textInputEditTextStudentID, textInputEditTextCourseID, textInputEditTextDate, textInputEditTextIntake;
     Button button, submit;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +41,9 @@ public class Attendance extends AppCompatActivity {
         textInputEditTextStudentID = findViewById(R.id.student_id);
         textInputEditTextCourseID = findViewById(R.id.course_id);
         textInputEditTextDate = findViewById(R.id.date);
-        SpinnerIntake = findViewById(R.id.SpinnerIntake);
+        textInputEditTextIntake = findViewById(R.id.intake);
         submit = findViewById(R.id.buttonSubmit);
+        progressBar = findViewById(R.id.progress);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,9 +52,10 @@ public class Attendance extends AppCompatActivity {
                 student_id = String.valueOf(textInputEditTextStudentID.getText());
                 course_id = String.valueOf(textInputEditTextCourseID.getText());
                 date = String.valueOf(textInputEditTextDate.getText());
-                intake = String.valueOf(SpinnerIntake.getSelectedItem());
+                intake = String.valueOf(textInputEditTextIntake.getText());
 
                 if(!student_id.equals("") && !course_id.equals("") && !date.equals("") && !intake.equals("")) {
+                    progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler();
                     handler.post(new Runnable() {
                         @Override
@@ -67,9 +70,10 @@ public class Attendance extends AppCompatActivity {
                             data[1] = course_id;
                             data[2] = date;
                             data[3] = intake;
-                            PutData putData = new PutData("http://192.168.1.112/CA_database/attendance.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.108/CA_database/attendance.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
+                                    progressBar.setVisibility(View.GONE);
                                     String result = putData.getResult();
                                     if(result.equals("Submitted Attendance")){
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();

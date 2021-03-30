@@ -104,27 +104,50 @@
                         tools:targetApi="jelly_bean" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <Spinner
-                    android:id="@+id/SpinnerIntake"
-                    android:layout_width="294dp"
-                    android:layout_height="46dp"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutIntake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:entries="@array/intake"
-                    android:hint="@string/intake"
+                    android:hint="Intake Ex: May 2019"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDate" />
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDate">
 
-                <Button
-                    android:id="@+id/buttonSubmit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/submit"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/intake"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_date"
+                        android:fontFamily="@font/poppinsmedium"
+                        tools:targetApi="jelly_bean" />
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/submit"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/progress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
