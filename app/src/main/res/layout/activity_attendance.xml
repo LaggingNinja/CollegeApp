@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/appbg"
+    android:background="@drawable/bg1"
     tools:context=".Attendance">
 
     <GridLayout
@@ -171,11 +171,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/mo_me"
         android:text="Take Attendance"
-        android:textColor="#80FFFFFF"
+        android:textColor="#020000"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg2"
     tools:context=".Booking">
+
+    <GridLayout
+        android:layout_width="367dp"
+        android:layout_height="593dp"
+        android:layout_margin="20dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="333dp"
+        android:layout_height="499dp"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        app:cardBackgroundColor="#B0FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    </GridLayout>
 
     <Button
         android:id="@+id/back"
