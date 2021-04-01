@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.collegeappv02">
+    package="com.example.collegeappv02" >
+
+
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,44 +13,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeAppV02"
-        android:usesCleartextTraffic="true">
-
+        android:usesCleartextTraffic="true" >
+        <activity android:name=".booking_computers"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity android:name=".booking_rooms"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity android:name=".booking_books"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity
             android:name=".Feedback"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".Campus"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".Ewallet"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".Order"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".Booking"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".Attendance"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".Login"
-            android:theme="@style/Theme.Design.Light.NoActionBar">
+            android:theme="@style/Theme.Design.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".SignUp"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
-
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+
+
     </application>
 
 </manifest>

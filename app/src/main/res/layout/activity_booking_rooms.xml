@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
-    tools:context=".Attendance">
+    android:background="@drawable/roomsbg"
+    tools:context=".booking_rooms">
 
     <GridLayout
         android:layout_width="367dp"
@@ -29,14 +29,14 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="#80FFFFFF"
+            app:cardBackgroundColor="#9AFFFFFF"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="295dp"
+                android:layout_height="385dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.4">
@@ -63,22 +63,22 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/textInputLayoutCourseID"
+                    android:id="@+id/textInputLayoutRoomID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:hint="Course ID"
+                    android:hint="Room ID"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStudentID">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/course_id"
+                        android:id="@+id/room_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableEnd="@drawable/ic_book"
+                        android:drawableEnd="@drawable/ic_meeting_room"
                         android:fontFamily="@font/poppinsmedium"
                         tools:targetApi="jelly_bean" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -93,7 +93,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCourseID">
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRoomID">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/date"
@@ -105,22 +105,43 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/textInputLayoutIntake"
+                    android:id="@+id/textInputLayoutStartingTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:hint="Intake E.g. May 2019"
+                    android:hint="Starting Time E.g. 1330"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDate">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/intake"
+                        android:id="@+id/startingtime"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableEnd="@drawable/ic_intake"
+                        android:drawableEnd="@drawable/ic_access_time"
+                        android:fontFamily="@font/poppinsmedium"
+                        tools:targetApi="jelly_bean" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutEndingime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="Ending Time E.g. 1430"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStartingTime">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/endingtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_access_time_filled"
                         android:fontFamily="@font/poppinsmedium"
                         tools:targetApi="jelly_bean" />
 
@@ -129,24 +150,30 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:visibility="gone"
-                        />
+                        android:visibility="gone" />
 
-                    <Button
-                        android:id="@+id/buttonSubmit"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/submit"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/progress"/>
+                        android:layout_alignParentBottom="true">
+
+                        <Button
+                            android:id="@+id/buttonApply"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Apply"></Button>
+
+                        <Button
+                            android:id="@+id/buttonAvailable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Available spot"></Button>
+                    </LinearLayout>
 
                 </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -158,6 +185,8 @@
 
     <Button
         android:id="@+id/back"
+        android:background="#6200ee"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -165,7 +194,6 @@
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -174,11 +202,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/mo_me"
-        android:text="Take Attendance"
-        android:textColor="#020000"
+        android:text="Book Rooms/Plots"
+        android:textColor="#FFFFFF"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
