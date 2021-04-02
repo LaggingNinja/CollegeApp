@@ -54,7 +54,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/student_id"
+                        android:id="@+id/booking_books_student_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_user"
@@ -75,7 +75,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStudentID">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/book_id"
+                        android:id="@+id/booking_books_book_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_book"
@@ -96,7 +96,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBookID">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/borrowdate"
+                        android:id="@+id/booking_books_borrowdate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_date"
@@ -117,20 +117,12 @@
                     app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBorrowDate">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/returndate"
+                        android:id="@+id/booking_books_returndate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_date"
                         android:fontFamily="@font/poppinsmedium"
                         tools:targetApi="jelly_bean" />
-
-                    <ProgressBar
-                        android:id="@+id/progress"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:visibility="gone"
-                        />
 
                     <LinearLayout
                         android:id="@+id/LinearLayout"
@@ -138,7 +130,7 @@
                         android:layout_width="match_parent"
                         android:layout_alignParentBottom="true">
                         <Button
-                            android:id="@+id/buttonApply"
+                            android:id="@+id/buttonApplyBooks"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -151,6 +143,14 @@
                             android:layout_weight="1"
                             android:text="View Books">
                         </Button>
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            />
                     </LinearLayout>
 
                 </com.google.android.material.textfield.TextInputLayout>

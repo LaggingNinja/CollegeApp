@@ -55,7 +55,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
           <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/student_id"
+              android:id="@+id/booking_computers_student_id"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:drawableEnd="@drawable/ic_user"
@@ -76,7 +76,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStudentID">
 
           <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/computer_id"
+              android:id="@+id/booking_computers_computer_id"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:drawableEnd="@drawable/ic_computer"
@@ -97,7 +97,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutComputerID">
 
           <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/date"
+              android:id="@+id/booking_computers_date"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:drawableEnd="@drawable/ic_date"
@@ -118,7 +118,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDate">
 
           <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/startingtime"
+              android:id="@+id/booking_computers_startingtime"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:drawableEnd="@drawable/ic_access_time"
@@ -139,19 +139,13 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStartingTime">
 
           <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/endingtime"
+              android:id="@+id/booking_computers_endingtime"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:drawableEnd="@drawable/ic_access_time_filled"
               android:fontFamily="@font/poppinsmedium"
               tools:targetApi="jelly_bean" />
 
-          <ProgressBar
-              android:id="@+id/progress"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_gravity="center"
-              android:visibility="gone" />
 
           <LinearLayout
               android:id="@+id/LinearLayout"
@@ -160,7 +154,7 @@
               android:layout_alignParentBottom="true">
 
             <Button
-                android:id="@+id/buttonApply"
+                android:id="@+id/buttonApplyComputers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -172,6 +166,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Available spot"></Button>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
           </LinearLayout>
 
         </com.google.android.material.textfield.TextInputLayout>
