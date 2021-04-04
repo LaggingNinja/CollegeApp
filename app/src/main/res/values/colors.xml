@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorAccent">#4CAF50</color>
     <color name="blue">#4675EC</color>
+    <color name="fav_icon_tint">#CAC7C7</color>
+    <color name="ligh_meduim_gray" >#f3f3f3</color>
 </resources>

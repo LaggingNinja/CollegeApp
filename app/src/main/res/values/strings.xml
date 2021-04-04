@@ -25,4 +25,32 @@
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
+    <string-array name="books">
+        <item>An American Marriage</item>
+        <item>The Great Gatsby</item>
+        <item>The Non-designer\'s Design Book</item>
+        <item>The Fault in our Stars</item>
+        <item>The Great Gatsby</item>
+        <item>The Messy Middle</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Book ID : AAM1</item>
+        <item>Book ID : TGG1</item>
+        <item>Book ID : TNDB1</item>
+        <item>Book ID : TFIOS1</item>
+        <item>Book ID : TGG2</item>
+        <item>Book ID : TMM1</item>
+    </string-array>
+
+    <string-array name="item_book_pagesrev">
+        <item>225 pages | 23 review</item>
+        <item>118 pages | 53 review</item>
+        <item>123 pages | 78 review</item>
+        <item>329 pages | 55 review</item>
+        <item>276 pages | 33 review</item>
+        <item>458 pages | 98 review</item>
+    </string-array>
+
+
 </resources>

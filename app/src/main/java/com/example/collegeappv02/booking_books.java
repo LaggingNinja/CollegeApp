@@ -16,7 +16,7 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 public class booking_books extends AppCompatActivity {
 
     TextInputEditText textInputEditTextStudentID, textInputEditTextBookID, textInputEditTextBorrowDate, textInputEditTextReturnDate;
-    Button button, apply;
+    Button button, apply, view;
     ProgressBar progressBar;
 
     @Override
@@ -25,11 +25,23 @@ public class booking_books extends AppCompatActivity {
         setContentView(R.layout.activity_booking_books);
 
         button = findViewById(R.id.back);
+        view = findViewById(R.id.buttonView);
+
         //when click back
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Booking.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        //when click view
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), view_booking_books.class);
                 startActivity(intent);
                 finish();
             }
