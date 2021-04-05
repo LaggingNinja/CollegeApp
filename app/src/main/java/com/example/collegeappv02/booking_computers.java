@@ -16,7 +16,7 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 public class booking_computers extends AppCompatActivity {
 
     TextInputEditText textInputEditTextStudentID, textInputEditTextComputerID, textInputEditTextDate, textInputEditTextStartingTime, textInputEditTextEndingTime;
-    Button apply, button;
+    Button apply, button, view;
     ProgressBar progressBar;
 
     @Override
@@ -30,6 +30,17 @@ public class booking_computers extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Booking.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        view = findViewById(R.id.buttonAvailable);
+        //when click view
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), view_booking_computers.class);
                 startActivity(intent);
                 finish();
             }

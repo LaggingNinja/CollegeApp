@@ -13,9 +13,15 @@
         android:theme="@style/Theme.CollegeAppV02"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".view_booking_rooms"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".view_booking_computers"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
             android:name=".view_booking_books_desc"
-            android:parentActivityName=".view_booking_books"
-            android:label="Details" />
+            android:label="Book Details"
+            android:parentActivityName=".view_booking_books" />
         <activity
             android:name=".view_booking_books"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
