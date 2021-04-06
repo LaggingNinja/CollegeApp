@@ -1,21 +1,571 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ewallet">
+    tools:context=".Ewallet"
+    android:orientation="vertical"
+    android:background="@drawable/cut_card_background2">
 
-    <Button
-        android:id="@+id/back"
-        android:background="#6200ee"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:paddingTop="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campus E-Wallet"
+            android:textColor="#fff"
+            android:layout_below="@id/t1"
+            android:textSize="28dp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.04"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_view"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Wallet Balance"
+            android:textSize="22dp"
+            android:textColor="#fff"
+            android:paddingLeft="35dp"
+            android:paddingTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rm276.50"
+            android:textSize="35dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#ff5d9e"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/pay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Pay"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            app:cardBackgroundColor="#A48FF3"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/transfer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Transfer"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            app:cardBackgroundColor="#3fefef"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Back"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction History"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="#516b9e"
+            android:letterSpacing="0.02"/>
+
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:background="#F4F2F2">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/food" />
+
+            <TextView
+                android:id="@+id/tt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i1"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:text="FRESCO"
+                android:textColor="#516b9e"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt1"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i1"
+                android:text="6 Apr - 8:20 AM"
+                android:textColor="#516b9e"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="-Rm11.50"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r1"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cafe" />
+
+            <TextView
+                android:id="@+id/tt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i2"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:text="Kafe Madeleine"
+                android:textColor="#516b9e"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt2"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i2"
+                android:text="23 Mar - 3.20 PM"
+                android:textColor="#516b9e"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="-Rm8.20"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r2"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/starbucks" />
+
+            <TextView
+                android:id="@+id/tt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i3"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:text="Starbucks"
+                android:textColor="#516b9e"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt3"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i3"
+                android:text="15 Mar - 10:55 AM"
+                android:textColor="#516b9e"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="-Rm12.10"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r3"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/fees" />
+
+            <TextView
+                android:id="@+id/tt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i4"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:text="Tuition Fees"
+                android:textColor="#516b9e"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt4"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i4"
+                android:text="02 Feb - 11:35 AM"
+                android:textColor="#516b9e"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="-Rm8033.00"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r4"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/stationery" />
+
+            <TextView
+                android:id="@+id/tt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i5"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:text="Stationery Store"
+                android:textColor="#516b9e"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt5"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i5"
+                android:text="07 Jan - 5:40 PM"
+                android:textColor="#516b9e"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="-Rm5.50"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r5"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/food" />
+
+            <TextView
+                android:id="@+id/tt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i6"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:text="FRESCO"
+                android:textColor="#516b9e"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt6"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i6"
+                android:text="05 Jan - 12:20 PM"
+                android:textColor="#516b9e"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="-Rm8.50"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r6"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/food2" />
+
+            <TextView
+                android:id="@+id/tt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i7"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.03"
+                android:text="TomYam Kitchen"
+                android:textColor="#516b9e"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt7"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/i7"
+                android:text="01 Jan - 11:45 AM"
+                android:textColor="#516b9e"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="-Rm6.10"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

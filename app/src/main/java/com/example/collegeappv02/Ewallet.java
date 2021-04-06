@@ -1,6 +1,7 @@
 package com.example.collegeappv02;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,16 +10,16 @@ import android.widget.Button;
 
 public class Ewallet extends AppCompatActivity {
 
-    Button button;
+    CardView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ewallet);
 
-        button = findViewById(R.id.back);
+        back = findViewById(R.id.back);
         //when click back
-        button.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
