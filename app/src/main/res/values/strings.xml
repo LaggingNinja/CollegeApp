@@ -51,6 +51,7 @@
         <item>276 pages | 33 review</item>
         <item>458 pages | 98 review</item>
     </string-array>
+    <string name="title_activity_google_maps">Campus Map</string>
 
 
 </resources>
