@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.collegeappv02">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -18,7 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeAppV02"
         android:usesCleartextTraffic="true">
-
+        <activity
+            android:name=".campus_indoor_map"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".campus_indoor"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -33,8 +38,7 @@
 
         <activity
             android:name=".GoogleMaps"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".view_booking_rooms"
             android:theme="@style/Theme.Design.Light.NoActionBar" />

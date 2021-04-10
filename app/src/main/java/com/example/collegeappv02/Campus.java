@@ -29,11 +29,22 @@ public class Campus extends AppCompatActivity {
         });
 
         outdoor = findViewById(R.id.outdoor);
-        //when click back
+        //when click outdoor
         outdoor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), GoogleMaps.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        indoor = findViewById(R.id.indoor);
+        //when click indoor
+        indoor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), campus_indoor.class);
                 startActivity(intent);
                 finish();
             }
