@@ -4,8 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".campus_indoor_map">
+    tools:context=".campus_indoor_map"
+    android:background="@drawable/bg3">
 
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:layout_margin="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mo_me"
+        android:text="Map"
+        android:textColor="#FFFCFC"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="403dp"
+        android:layout_height="624dp"
+        android:layout_margin="20dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="499dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#9AFFFFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+
+            <ImageView
+                android:layout_width="339dp"
+                android:layout_height="518dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:src="@drawable/canopy" />
+
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
 
 
 
