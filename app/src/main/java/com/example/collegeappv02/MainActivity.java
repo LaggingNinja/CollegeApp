@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.Map;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     CardView CardEwallet;
     CardView CardCampus;
     CardView CardFeedback;
+    ImageView more;
 
 
     @Override
@@ -31,6 +33,17 @@ public class MainActivity extends AppCompatActivity {
         CardEwallet = findViewById(R.id.CardEwallet);
         CardCampus = findViewById(R.id.CardCampus);
         CardFeedback = findViewById(R.id.CardFeedback);
+        more = findViewById(R.id.more);
+
+        //when click more
+        more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), More.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         //when click Take Attendance
         CardAttendance.setOnClickListener(new View.OnClickListener() {

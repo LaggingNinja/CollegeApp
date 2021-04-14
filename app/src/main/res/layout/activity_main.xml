@@ -17,6 +17,16 @@
         android:textColor="@color/black"
         android:layout_margin="12dp" />
 
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/more" />
+
     <TextView
         android:id="@+id/subtitle"
         android:layout_width="wrap_content"

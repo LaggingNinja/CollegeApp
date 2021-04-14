@@ -18,12 +18,24 @@
         android:theme="@style/Theme.CollegeAppV02"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".AboutUs"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".Hotlines"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity
+            android:name=".Staff"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".More"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
             android:name=".campus_indoor_map"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".campus_indoor"
             android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:windowSoftInputMode="adjustNothing"/>
+            android:windowSoftInputMode="adjustNothing" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

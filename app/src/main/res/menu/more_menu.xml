@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item android:id="@+id/dashboard"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="My Dashboard">
+        </item>
+        <item android:id="@+id/staff"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="Staff">
+        </item>
+        <item android:id="@+id/hotlines"
+            android:icon="@drawable/ic_baseline_smartphone_24"
+            android:title="Hotlines">
+        </item>
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item android:id="@+id/policy"
+            android:icon="@drawable/ic_baseline_policy_24"
+            android:title="Privacy Policy">
+        </item>
+        <item android:id="@+id/share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share">
+        </item>
+        <item android:id="@+id/aboutus"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="About Us">
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item android:id="@+id/logout"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            android:title="Logout">
+        </item>
+    </group>
+
+</menu>
