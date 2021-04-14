@@ -18,13 +18,13 @@
         android:layout_margin="12dp" />
 
     <ImageView
-        android:layout_width="154dp"
-        android:layout_height="134dp"
+        android:layout_width="158dp"
+        android:layout_height="123dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="-40dp"
+        android:layout_marginStart="-60dp"
         android:layout_marginTop="-20dp"
         android:layout_toEndOf="@+id/textView"
-        android:src="@drawable/logocma" />
+        android:src="@drawable/logosmaremoved" />
 
     <ImageView
         android:id="@+id/more"

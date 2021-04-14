@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".More">
 
+
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_menu"
         android:layout_width="match_parent"
@@ -14,5 +16,7 @@
         app:headerLayout="@layout/header"
         app:menu="@menu/more_menu">
     </com.google.android.material.navigation.NavigationView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
