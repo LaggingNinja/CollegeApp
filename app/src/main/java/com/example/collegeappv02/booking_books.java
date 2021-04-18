@@ -63,8 +63,10 @@ public class booking_books extends AppCompatActivity {
                 borrowdate = String.valueOf(textInputEditTextBorrowDate.getText());
                 returndate = String.valueOf(textInputEditTextReturnDate.getText());
 
-                if(!student_id.equals("") && !book_id.equals("") && !borrowdate.equals("") && !returndate.equals("")) {
-                    progressBar.setVisibility(View.VISIBLE);
+                if (!student_id.equals("") && !book_id.equals("") && !borrowdate.equals("") && !returndate.equals("")) {
+
+                    if (book_id.equals("AAM1") || book_id.equals("TGG1") || book_id.equals("TNDB1") || book_id.equals("TFIOS1") || book_id.equals("TGG2") || book_id.equals("TMM1")){
+                        progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler();
                     handler.post(new Runnable() {
                         @Override
@@ -84,25 +86,27 @@ public class booking_books extends AppCompatActivity {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
                                     String result = putData.getResult();
-                                    if(result.equals("Apply Complete")){
-                                        Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                    if (result.equals("Apply Complete")) {
+                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), Booking.class);
                                         startActivity(intent);
                                         finish();
 
-                                    }
-                                    else{
-                                        Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             }
 
                         }
                     });
+                    } else{
+                        Toast.makeText(getApplicationContext(), "Unavailable Book ID", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "All fields required", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(getApplicationContext(),"All fields required", Toast.LENGTH_SHORT).show();
-                }
+
             }
         });
 

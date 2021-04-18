@@ -65,6 +65,8 @@ public class booking_computers extends AppCompatActivity {
                 endingtime = String.valueOf(textInputEditTextEndingTime.getText());
 
                 if(!student_id.equals("") && !computer_id.equals("") && !date.equals("") && !startingtime.equals("") && !endingtime.equals("")) {
+
+                    if (computer_id.equals("1B") || computer_id.equals("2A") || computer_id.equals("3B") || computer_id.equals("4A") || computer_id.equals("6A") || computer_id.equals("6B") || computer_id.equals("7B") || computer_id.equals("8A") || computer_id.equals("9B") || computer_id.equals("1D") || computer_id.equals("2D") || computer_id.equals("3C") || computer_id.equals("4C") || computer_id.equals("4D") || computer_id.equals("5D") || computer_id.equals("6D") || computer_id.equals("9D")){
                     progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler();
                     handler.post(new Runnable() {
@@ -102,8 +104,10 @@ public class booking_computers extends AppCompatActivity {
 
                         }
                     });
-                }
-                else{
+                    } else{
+                        Toast.makeText(getApplicationContext(), "Unavailable Seat", Toast.LENGTH_SHORT).show();
+                    }
+                } else{
                     Toast.makeText(getApplicationContext(),"All fields required", Toast.LENGTH_SHORT).show();
                 }
             }

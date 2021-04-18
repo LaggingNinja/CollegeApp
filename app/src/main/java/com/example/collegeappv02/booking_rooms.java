@@ -66,6 +66,8 @@ public class booking_rooms extends AppCompatActivity {
                 endingtime = String.valueOf(textInputEditTextEndingTime.getText());
 
                 if(!student_id.equals("") && !rooms_id.equals("") && !date.equals("") && !startingtime.equals("") && !endingtime.equals("")) {
+
+                    if (rooms_id.equals("ROOM2") || rooms_id.equals("ROOM3") || rooms_id.equals("ROOM4") || rooms_id.equals("ROOM6")){
                     progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler();
                     handler.post(new Runnable() {
@@ -103,6 +105,9 @@ public class booking_rooms extends AppCompatActivity {
 
                         }
                     });
+                    } else{
+                        Toast.makeText(getApplicationContext(), "Unavailable Room", Toast.LENGTH_SHORT).show();
+                    }
                 }
                 else{
                     Toast.makeText(getApplicationContext(),"All fields required", Toast.LENGTH_SHORT).show();

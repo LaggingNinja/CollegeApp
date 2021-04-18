@@ -1,0 +1,48 @@
+CREATE TABLE users (
+fullname TEXT NOT NULL,
+username VARCHAR(100) UNIQUE NOT NULL,
+password TEXT NOT NULL,
+email VARCHAR(300) UNIQUE NOT NULL
+)
+
+//
+CREATE TABLE attendance (
+student_id INT(10)  NOT NULL,
+course_id VARCHAR(100) NOT NULL,
+date VARCHAR(100) NOT NULL,
+intake TEXT NOT NULL
+)
+
+//
+CREATE TABLE booking_books (
+student_id INT(10)  NOT NULL,
+book_id TEXT NOT NULL,
+borrowdate TEXT NOT NULL,
+returndate TEXT NOT NULL
+)
+
+//
+CREATE TABLE booking_computers (
+student_id INT(10)  NOT NULL,
+computer_id TEXT NOT NULL,
+date TEXT NOT NULL,
+startingtime TEXT NOT NULL,
+endingtime TEXT NOT NULL
+)
+
+//
+CREATE TABLE booking_rooms (
+student_id INT(10)  NOT NULL,
+rooms_id TEXT NOT NULL,
+date TEXT NOT NULL,
+startingtime TEXT NOT NULL,
+endingtime TEXT NOT NULL
+)
+
+//
+CREATE TABLE feedback (
+student_id INT(10)  NOT NULL,
+email VARCHAR(300)  NOT NULL,
+name VARCHAR(300)  NOT NULL,
+content TEXT NOT NULL
+)

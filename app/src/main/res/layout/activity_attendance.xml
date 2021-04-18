@@ -36,7 +36,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="295dp"
+                android:layout_height="361dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.4">
@@ -124,29 +124,42 @@
                         android:fontFamily="@font/poppinsmedium"
                         tools:targetApi="jelly_bean" />
 
-                    <ProgressBar
-                        android:id="@+id/progress"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:visibility="gone"
-                        />
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/buttonSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/submit"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/progress" />
 
                     <Button
-                        android:id="@+id/buttonSubmit"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/buttonView"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/submit"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/progress"/>
+                        android:layout_weight="1"
+                        android:text="Attendance History">
+
+                    </Button>
+
+                    </LinearLayout>
 
                 </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -175,7 +188,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/mo_me"
         android:text="Take Attendance"
-        android:textColor="#020000"
+        android:textColor="#000000"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

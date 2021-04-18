@@ -20,7 +20,7 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 public class Attendance extends AppCompatActivity {
 
     TextInputEditText textInputEditTextStudentID, textInputEditTextCourseID, textInputEditTextDate, textInputEditTextIntake;
-    Button button, submit;
+    Button button, submit, view;
     ProgressBar progressBar;
 
     @Override
@@ -34,6 +34,17 @@ public class Attendance extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        view = findViewById(R.id.buttonView);
+        //when click view
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Attendance_History.class);
                 startActivity(intent);
                 finish();
             }

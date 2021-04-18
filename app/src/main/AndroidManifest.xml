@@ -18,11 +18,14 @@
         android:theme="@style/Theme.CollegeAppV02"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Attendance_History"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
             android:name=".AboutUs"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".Hotlines"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".Staff"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
