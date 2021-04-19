@@ -26,7 +26,7 @@ public class Attendance_History extends AppCompatActivity {
 
     Button button;
 
-    private static final String ATTENDANCE_URL = "http://192.168.1.111/CA_database/attendanceAPI.php";
+    private static final String ATTENDANCE_URL = "http://192.168.140.82/CA_database/attendanceAPI.php";
 
     //a list to store all the products
     List<myrow_attendance> attendanceList;

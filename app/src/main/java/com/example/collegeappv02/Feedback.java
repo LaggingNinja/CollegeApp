@@ -66,7 +66,7 @@ public class Feedback extends AppCompatActivity {
                             data[1] = email;
                             data[2] = name;
                             data[3] = content;
-                            PutData putData = new PutData("http://192.168.1.111/CA_database/feedback.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.140.82/CA_database/feedback.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);

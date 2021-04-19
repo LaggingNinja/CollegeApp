@@ -18,6 +18,17 @@
         android:theme="@style/Theme.CollegeAppV02"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".TomYamSoup"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity android:name=".Cappuccino"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity
+            android:name=".OrderDone"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".ChickenRice"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
             android:name=".Attendance_History"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity

@@ -85,7 +85,7 @@ public class booking_rooms extends AppCompatActivity {
                             data[2] = date;
                             data[3] = startingtime;
                             data[4] = endingtime;
-                            PutData putData = new PutData("http://192.168.1.111/CA_database/booking_rooms.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.140.82/CA_database/booking_rooms.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
