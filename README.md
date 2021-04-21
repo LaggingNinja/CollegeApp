@@ -4,7 +4,7 @@ Application by Chong Wei Shen AKA LaggingNinja
 
 Contacts \
 Discord: 阿轩~ Wei Shen#8528 \
-LinkedIn: Chong Wei Shen \\
+LinkedIn: Chong Wei Shen \
 Email: cws331600@gmail.com \
 
 ###### Project Poster: \
