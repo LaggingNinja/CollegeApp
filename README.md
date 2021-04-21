@@ -2,7 +2,12 @@
 ## Diploma in IT, Final Year Project - My Campus Application
 Application by Chong Wei Shen AKA LaggingNinja
 
-Project Poster: \
+Contacts \
+Discord: 阿轩~ Wei Shen#8528 \
+LinkedIn: Chong Wei Shen \\
+Email: cws331600@gmail.com \
+
+###### Project Poster: \
 ![](Program_Screenshots/CMAproject_Poster.png)
 
 In order for the DATABASE to work, following action need to be done:\
