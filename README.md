@@ -2,6 +2,9 @@
 ## Diploma in IT, Final Year Project - My Campus Application
 Application by Chong Wei Shen AKA LaggingNinja
 
+Project Poster: \
+![](Program_Screenshots/CMAproject_Poster.png)
+
 In order for the DATABASE to work, following action need to be done:\
 1.Copy the CA_database file and put into ur xampp/htdocs\
 2.Create a database in mysql : ca_database\
@@ -17,7 +20,7 @@ Follow this video if don't understand:https://youtu.be/X8oD4q3XtQQ?t=2296 <br/>
 
 Program screenshots will added very soon.
 
-//bellow are references for my collaborator <br/>
+//bellow are android studio <-> Github tutorials <br/>
 Android studio GitHub tutorial(first time) : https://www.youtube.com/watch?v=k04Sca3Cpmo <br/>
 How to Commit,Push: https://youtu.be/6dwcMlK6s4w?t=1211 <br/>
 How to pull /update :https://youtu.be/6dwcMlK6s4w?t=1474
