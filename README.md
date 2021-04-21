@@ -1,5 +1,5 @@
 # CollegeApp
-## Diploma in IT, Final Year Project - My Campus Application
+## Diploma in IT, Final Year Project - Campus Mobile Application
 Application by Chong Wei Shen AKA LaggingNinja
 
 Contacts \
