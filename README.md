@@ -18,7 +18,7 @@ Files that need to modify^ : Login.java, Feedback.java, SignUp.java,attendance.j
 Follow this video if don't understand:https://youtu.be/X8oD4q3XtQQ?t=2296 <br/>
 5. Done and all set to run the app!
 
-Program screenshots will added very soon.
+
 
 //bellow are android studio <-> Github tutorials <br/>
 Android studio GitHub tutorial(first time) : https://www.youtube.com/watch?v=k04Sca3Cpmo <br/>
