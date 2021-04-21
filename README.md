@@ -1,5 +1,6 @@
 # CollegeApp
 ## Diploma in IT, Final Year Project - My Campus Application
+Application by Chong Wei Shen AKA LaggingNinja
 
 In order for the DATABASE to work, following action need to be done:\
 1.Copy the CA_database file and put into ur xampp/htdocs\
@@ -9,12 +10,12 @@ In order for the DATABASE to work, following action need to be done:\
    a. First, go to CMD type: ipconfig\
    b. Copy Ipv4 Address\
    c. Paste into "YOUR_IP_HERE" to all the files needed, example bellow\
-Example(this is from line63 of Login.java): PutData putData = new PutData("http://YOUR_IP_HERE/CA_database/login.php", "POST", field, data);\
+Example(this is from line63 of Login.java): ```PutData putData = new PutData("http://YOUR_IP_HERE/CA_database/login.php", "POST", field, data);```\
 Files that need to modify^ : Login.java, Feedback.java, SignUp.java, booking_books.java, booking_computers.java, booking_rooms.java.\
 Follow this video if don't understand:https://youtu.be/X8oD4q3XtQQ?t=2296 <br/>
 5. Done and all set to run the app!
 
-Application by Chong Wei Shen AKA LaggingNinja
+
 
 //bellow are references for my collaborator <br/>
 Android studio GitHub tutorial(first time) : https://www.youtube.com/watch?v=k04Sca3Cpmo <br/>
