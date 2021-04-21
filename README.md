@@ -5,9 +5,9 @@ Application by Chong Wei Shen AKA LaggingNinja
 Contacts \
 Discord: 阿轩~ Wei Shen#8528 \
 LinkedIn: Chong Wei Shen \
-Email: cws331600@gmail.com \
+Email: cws331600@gmail.com 
 
-###### Project Poster: \
+###### Project Poster: 
 ![](Program_Screenshots/CMAproject_Poster.png)
 
 In order for the DATABASE to work, following action need to be done:\
