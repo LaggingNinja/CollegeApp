@@ -7,6 +7,8 @@ Discord: 阿轩~ Wei Shen#8528 \
 LinkedIn: Chong Wei Shen \
 Email: cws331600@gmail.com 
 
+For program screenshots and explanation, pls download: `CAMPUS MOBILE APPLICATION GitHub.docx`
+
 ###### Project Poster: 
 ![](Program_Screenshots/CMAproject_Poster.png)
 
