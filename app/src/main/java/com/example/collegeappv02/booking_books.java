@@ -81,7 +81,7 @@ public class booking_books extends AppCompatActivity {
                             data[1] = book_id;
                             data[2] = borrowdate;
                             data[3] = returndate;
-                            PutData putData = new PutData("http://192.168.140.82/CA_database/booking_books.php", "POST", field, data);
+                            PutData putData = new PutData("http://YOUR_IP_HERE/CA_database/booking_books.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);

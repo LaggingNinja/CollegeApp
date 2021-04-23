@@ -81,7 +81,7 @@ public class Attendance extends AppCompatActivity {
                             data[1] = course_id;
                             data[2] = date;
                             data[3] = intake;
-                            PutData putData = new PutData("http://192.168.140.82/CA_database/attendance.php", "POST", field, data);
+                            PutData putData = new PutData("http://YOUR_IP_HERE/CA_database/attendance.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
